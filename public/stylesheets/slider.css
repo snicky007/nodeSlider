@@ -1,0 +1,67 @@
+     .slider-container {
+            width: 800px;
+            height: 218px;
+            overflow-x: hidden;
+            overflow-y: visible;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            padding-top: 8px;
+        }
+        .slider {
+            margin-left: -200px;
+            width: 2000em;
+            height: 200px;
+            position: relative;
+        }
+        .slider .inner-boxes {
+            float: left;
+            z-index: 1;
+        }
+        .left-shade,
+        .right-shade {
+            position: absolute;
+            opacity: .50;
+            /* Standards Compliant Browsers */
+            filter: alpha(opacity=50);
+            z-index: 2;
+            width: 200px;
+            height: 200px;
+            background: black;
+            top: 8px;
+        }
+        .left-shade {
+            left: 0;
+            border-right: 8px solid black;
+        }
+        .right-shade {
+            left: 600px;
+            border-left: 8px solid black;
+        }
+        .slider-nav {
+            position: absolute;
+            top: 92%;
+            left: 45%;
+        }
+        .middle-frame {
+            background: yellow;
+            position: absolute;
+            top: -1px;
+            left: 200px;
+            height: 202px;
+            width: 400px;
+            z-index: -1;
+            border-top: 8px solid black;
+            border-bottom: 8px solid black;
+        }
+        .nav-dot {
+            background: black;
+            border-radius: 10px;
+            display: inline-block;
+            height: 15px;
+            text-indent: 1000px;
+            width: 15px;
+        }
+        .active {
+            background: grey;
+        }
